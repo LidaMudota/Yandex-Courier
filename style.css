@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'BBT';
+  src: url('./font/Jaldi-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'BBT', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Стили для шапки с фоновым изображением */
+header {
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  background-image: url('images/logo.png'); /* Укажите путь к вашему изображению */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Фиксированное фоновое изображение */
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3em;
+  color: #FFD700;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Секция описания */
+.description {
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-left: 7px solid #FFD700;
+  backdrop-filter: blur(10px);
+}
+
+.description h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Стили для формы */
+.form-section {
+  text-align: center;
+  margin: 30px 0;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-left: 7px solid #FFD700;
+  backdrop-filter: blur(10px);
+}
+
+.form-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 25px;
+  border: 2px solid #FFD700;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form input:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Интегрированный стиль кнопки с 3D-анимацией */
+button {
+font-family: inherit;
+font-size: 18px;
+background: linear-gradient(to bottom, #FFD700 0%, #FFA500 100%);
+color: white;
+padding: 0.8em 1.2em;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+border-radius: 25px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+transition: all 0.3s;
+}
+
+button:hover {
+transform: translateY(-3px);
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+transform: scale(0.95);
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+display: block;
+margin-left: 0.4em;
+transition: all 0.3s;
+}
+
+button svg {
+width: 18px;
+height: 18px;
+fill: #FFD700;
+transition: all 0.3s;
+}
+
+button .svg-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.2);
+margin-right: 0.5em;
+transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+transform: rotate(45deg);
+}
+
+/* Стили для карточек с иконками */
+.main {
+display: flex;
+flex-direction: column;
+gap: 1em;
+align-items: center;
+margin-top: 20px;
+}
+
+.up, .down {
+display: flex;
+flex-direction: row;
+gap: 1em;
+}
+
+.card1, .card2, .card3, .card4 {
+width: 90px;
+height: 90px;
+outline: none;
+border: none;
+background: white;
+border-radius: 50%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+transition: .2s ease-in-out;
+border: 1px dashed #333;
+}
+
+.instagram {
+margin-top: 1.5em;
+margin-left: 1.2em;
+fill: #cc39a4;
+}
+
+.twitter {
+margin-top: 1.5em;
+margin-left: -.9em;
+fill: #03A9F4;
+}
+
+.github {
+margin-top: -.6em;
+margin-left: 1.2em;
+}
+
+.discord {
+margin-top: -.9em;
+margin-left: -1.2em;
+fill: #8c9eff;
+}
+
+.card1:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+fill: white;
+}
+
+.card2:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+fill: white;
+}
+
+.card3:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: black;
+}
+
+.card3:hover .github {
+fill: white;
+}
+
+.card4:hover {
+cursor: pointer;
+scale: 1.1;
+background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+fill: white;
+}
+
+/* Стили для футера */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #000000;
+  color: #FFD700;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
